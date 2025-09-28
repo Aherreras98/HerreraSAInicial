@@ -1,0 +1,8 @@
+form label {
+    display:inline-flex; 
+    width: 30%;  
+}
+
+.button {
+    text-align: center;
+}

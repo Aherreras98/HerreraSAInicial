@@ -38,6 +38,7 @@ public class Entrada extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Entrada</title>");
+            out.println("<link rel='stylesheet' href='CSS/style.css' type='text/css'>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Entrada at " + request.getContextPath() + "</h1>");
