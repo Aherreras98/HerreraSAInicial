@@ -37,24 +37,24 @@ public class Entrada extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Entrada</title>");            
+            out.println("<title>Servlet Entrada</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Entrada at " + request.getContextPath() + "</h1>");
             out.println("<h2>El m&eacutetodo de llamada es " + request.getMethod() + "</h2>");
             Enumeration<String> parametros = request.getParameterNames();
             if (parametros.hasMoreElements()) {
-            out.println("<ul>");
-                while(parametros.hasMoreElements()){
+                out.println("<ul>");
+                while (parametros.hasMoreElements()) {
                     String nombre = parametros.nextElement();
                     out.println("<li>" + nombre + " con valor " + request.getParameter(nombre) + "<li>");
                 }
-            out.println("</ul>");
-        } else {
+                out.println("</ul>");
+            } else {
                 out.println("No has pasado parametros");
             }
-        
-            out.println("<a href=\"index.html\">Volver</a>");   
+
+            out.println("<a href=\"index.html\">Volver al &iacute;ndice</a>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -71,26 +71,26 @@ public class Entrada extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Entrada</title>");            
+            out.println("<title>Servlet Entrada</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Entrada at " + request.getContextPath() + "</h1>");
             out.println("<h2>El m&eacutetodo de llamada es " + request.getMethod() + "</h2>");
             Enumeration<String> parametros = request.getParameterNames();
             out.println("<ul>");
-                while(parametros.hasMoreElements()){
-                    String nombre = parametros.nextElement();
-                    out.println("<li>" + nombre + " con valor " + request.getParameter(nombre) + "<li>");
-                }
+            while (parametros.hasMoreElements()) {
+                String nombre = parametros.nextElement();
+                out.println("<li>" + nombre + " con valor " + request.getParameter(nombre) + "<li>");
+            }
             out.println("</ul>");
-        
-            out.println("<a href=\"index.html\">Volver</a>");   
+
+            out.println("<a href=\"index.html\">Volver al &iacute;ndice</a>");
             out.println("</body>");
             out.println("</html>");
         }
