@@ -21,7 +21,7 @@ public class FormularioValidadoIntermedio extends HttpServlet {
 
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
-
+        
         String nombre = request.getParameter("nombre");
         String fechaNacimientoStr = request.getParameter("fechaNacimiento");
         String salario = request.getParameter("salario");
