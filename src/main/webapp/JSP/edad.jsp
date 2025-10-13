@@ -32,15 +32,15 @@
             if (meses == 0 && dias == 0) {
                 mensaje = "Hola " + nombre + ", tienes " + anios + " años.";
             } else if (anios == 0 && meses != 0 && dias != 0) {
-                mensaje = "Hola " + nombre + ", tienes " + meses + " meses y " + dias + " dias.";
+                mensaje = "Hola " + nombre + ", tienes " + meses + " meses y " + dias + " d&iacute;as.";
             } else if (anios == 0 && meses != 0 && dias == 0) {
                 mensaje = "Hola " + nombre + ", tienes " + meses + " meses.";
             } else if (anios == 0 && meses == 0 && dias != 0) {
-                mensaje = "Hola " + nombre + ", tienes " + dias + " dias.";
+                mensaje = "Hola " + nombre + ", tienes " + dias + " d&iacute;as.";
             } else if (meses == 0 && dias != 0) {
                 mensaje = "Hola " + nombre + ", tienes " + anios + " años y " + dias + " d&iacute;as.";
             } else {
-                mensaje = "Hola " + nombre + ", tienes " + anios + " años, " + meses + " meses y " + dias + " dias.";
+                mensaje = "Hola " + nombre + ", tienes " + anios + " años, " + meses + " meses y " + dias + " d&iacute;as.";
             }
         }
 
