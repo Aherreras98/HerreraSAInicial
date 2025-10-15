@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Calculadora JSP</title>
+        <link href="../CSS/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
 
@@ -74,8 +75,8 @@
             </p>
         </form>
 
-        <hr>
-
+    
+        
         <a href="<%= request.getContextPath()%>">Volver al &iacute;ndice</a>
 
     </body>

@@ -18,7 +18,7 @@
         String saludo;
         if (hora >= 8 && hora <= 13) {
             saludo = "Buenos d&iacute;s";
-        } else if (hora > 13 && hora <= 21) {
+        } else if (hora > 13 && hora < 21) {
             saludo = "Buenas tardes";
         } else {
             saludo = "Buenas noches";
