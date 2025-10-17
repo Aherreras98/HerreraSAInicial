@@ -11,7 +11,7 @@
 
     if (request.getParameter("numeroSecreto") == null) {
         Random aleatorio = new Random();
-        numeroSecreto = aleatorio.nextInt(101);
+        numeroSecreto = aleatorio.nextInt(100) + 1;
 
     } else {    
         numeroSecreto = Integer.parseInt(request.getParameter("numeroSecreto"));
@@ -36,7 +36,7 @@
 %>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Adivina el N&uacutemero Secreto</title>
@@ -45,6 +45,8 @@
 <body>
 <div class="container">
     <h1 class="titulo-principal">Adivina el N&uacutemero Secreto</h1>
+    <p>Este juego consiste en introducir un n&uacute;mero del 1 al 100 para intentar adivinar el n&uacute;mero que ha pensado el ordenador, despu&eacute;s
+        de cada intento, recibir&aacute;s una pista diciendo si el n&uacute;mero es mayor o menos que el introducido.</p>
 
     <form method="post" action="numerosecreto.jsp">
 

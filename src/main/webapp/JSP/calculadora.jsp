@@ -2,7 +2,7 @@
 <%@page import="java.util.Date" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Calculadora JSP</title>
